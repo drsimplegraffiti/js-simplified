@@ -58,7 +58,7 @@ This `repository` contains a collection of JavaScript topics and exercises.Each 
 
 #### Variables are containers for storing data values.
 
-> In this example bunny is a variable, "bunny" is the value of the variable, and "string" is the data type.
+> In this example :rabbit: bunny is a variable, "bunny" is the value of the variable, and "string" is the data type.
 
 ```js
 var bunny = 'lucy';
@@ -594,8 +594,6 @@ nestedArrays[0][0]; // 'Lucy'
 ---
 
 ### JSON <a name="json"></a>
-
-### JSON
 
 `JSON` stands for JavaScript Object Notation. It is a lightweight data-interchange format. We can use `JSON` to store and exchange data. JSON is often used when data is sent from a server to a web page.
 
