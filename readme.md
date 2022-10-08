@@ -1,6 +1,6 @@
-
 ![book](https://user-images.githubusercontent.com/70065792/194689013-a1e25eed-5e15-4107-b618-a3a5af6e49a9.jpg)
 
+&nbsp;
 
 ### System Requirements
 
@@ -8,6 +8,8 @@ Download and install the following software:
 
 - [Node.js](https://nodejs.org/en/download/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
+
+&nbsp;
 
 ### Getting Started
 
@@ -18,6 +20,8 @@ Download and install the following software:
 5. Run the code using the `node index.js` command.
 6. Repeat steps 4 and 5 until you have completed all the exercises.
 7. Preferably, install nodemon globally using `npm install -g nodemon` and run the code using `nodemon index.js` command.
+
+&nbsp;
 
 ### TABLE OF CONTENT
 
@@ -41,20 +45,19 @@ Download and install the following software:
 | 15  |    [Calculator-exercise](#cal-exercise)     |                                            Calculator exercise |
 | 16  |                 [HOF](#HOF)                 |                                         reduce,map,filter,find |
 | 17  |       [Destructuring](#destructuring)       |                        Destructuring assignment, array, object |
+| 18  |           [Resources](#resources)           |                                                                |
 
----
+&nbsp;
 
 ### Introduction <a name="intro"></a>
 
-JavaScript is a programming language that is used to make web pages interactive. It is a lightweight, interpreted programming language with first-class functions, most known as the scripting language for Web pages, but it's used in many non-browser environments as well. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
+_JavaScript is a programming language that is used to make web pages interactive. It is a lightweight, interpreted programming language with first-class functions, most known as the scripting language for Web pages, but it's used in many non-browser environments as well. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles._
 
-This `repository` contains a collection of JavaScript topics and exercises.Each topic is explained in a separate `md` file. The `md` file contains the topic and the exercises. The exercises are written in `JavaScript` and can be run in the `Node.js` environment.
+This :file_folder: `repository` contains a collection of JavaScript topics and exercises.Each topic is explained in a separate `md` file. The `md` file contains the topic and the exercises. The exercises are written in `JavaScript` and can be run in the `Node.js` environment.
 
----
+&nbsp;
 
 ### Variables <a name="variables"></a>
-
-### Variables in JavaScript
 
 #### Variables are containers for storing data values.
 
@@ -64,6 +67,8 @@ This `repository` contains a collection of JavaScript topics and exercises.Each 
 var bunny = 'lucy';
 var dog = 'Tom';
 var cat = 'Molly';
+
+console.log(bunny, dog, cat);
 ```
 
 ---
@@ -82,7 +87,7 @@ var cat = 'Molly';
 
 - JavaScript variables must begin with a letter, underscore, or dollar sign.
 
-#### Acceptable naming conventions
+#### Acceptable naming conventions :heavy_check_mark:
 
 ```js
 var bunny = 'lucy';
@@ -90,7 +95,7 @@ var _bunny = 'lucy';
 var $bunny = 'lucy';
 ```
 
-#### Unacceptable naming conventions
+#### Unacceptable naming conventions :x:
 
 ```js
 var 1bunny = 'lucy';
@@ -198,12 +203,10 @@ function animalName() {
 
 ### Data Types <a name="data-types"></a>
 
-## Javascript Data Types
-
 1. Primitive Data Types
 2. Non-Primitive Data Types
 
-### Primitive Data Types
+#### Primitive
 
 1. Number
 2. String
@@ -212,48 +215,48 @@ function animalName() {
 5. Undefined
 6. Symbol
 
-### Non-Primitive Data Types
+#### Non-Primitive
 
 1. Object
 2. Array
 3. Function
 
-### Examples of Primitive Data Types
+#### Examples of Primitive Data Types
 
-#### Number
+##### Number
 
 ```javascript
 var bunny_height = 3.14; // A number with decimals
 var bunny_height = 3; // A number without decimals
 ```
 
-#### String
+##### String
 
 ```javascript
 var bunny_name = 'Lucy'; // Using double quotes
 var bunny_name = 'Tom'; // Using single quotes
 ```
 
-#### Boolean
+##### Boolean
 
 ```javascript
 var isBunnyHappy = true;
 var isBunnyHappy = false;
 ```
 
-#### Null
+##### Null
 
 ```javascript
 var bunny = null; // Value is null. Null means "non-existent"
 ```
 
-#### Undefined
+##### Undefined
 
 ```javascript
 var bunny; // Value is undefined. Undefined means a variable has been declared, but not defined
 ```
 
-#### Symbol
+##### Symbol
 
 ```javascript
 var bunny = Symbol('Lucy'); // Symbol is a primitive data type, whose instances are unique and immutable
@@ -261,9 +264,9 @@ var bunny = Symbol('Lucy'); // Symbol is a primitive data type, whose instances 
 
 ---
 
-### Examples of Non-Primitive Data Types
+#### Examples of Non-Primitive Data Types
 
-#### Object
+##### Object
 
 ```javascript
 var bunny = {
@@ -277,7 +280,7 @@ console.log(bunny.age); // Output: 3
 console.log(bunny.isHappy); // Output: true
 ```
 
-#### Array
+##### Array
 
 ```javascript
 var bunnies = ['Lucy', 'Tom', 'Molly'];
@@ -285,7 +288,7 @@ console.log(bunnies[0]); // Output: Lucy
 console.log(bunnies[1]); // Output: Tom
 ```
 
-#### Function
+##### Function
 
 ```javascript
 function adoptBunny() {
@@ -295,15 +298,15 @@ function adoptBunny() {
 
 ---
 
-### Exercises
+##### Exercise
 
-1. Declare a variable named `bunny` and assign it to an object with the following properties: `name`, `age`, and `isHappy`. Set the value of `name` to a string, `age` to a number, and `isHappy` to a boolean.
+Declare a variable named :rabbit:`bunny` and assign it to an object with the following properties: `name`, `age`, and `isHappy`. Set the value of `name` to a string, `age` to a number, and `isHappy` to a boolean.
 
 ---
 
-### Functions <a name="functions"></a>
+&nbsp;
 
-### Javascript Functions
+#### Functions <a name="functions"></a>
 
 - Functions are a set of statements that perform a task or calculates a value.
 
@@ -349,9 +352,7 @@ sumBunnies();
 
 - The function above will return the value of `totalBunnies` which is `30`.
 
----
-
-### The above function can be rewritten as an anonymous function
+The above function can be rewritten as an anonymous function
 
 ```javascript
 var sumBunnies = function () {
@@ -366,13 +367,13 @@ sumBunnies();
 
 ---
 
-### Function Parameters
+#### Function Parameters
 
 - Function parameters are listed inside the parentheses () in the function definition.
 
 - Function arguments are the values received by the function when it is invoked.
 
-#### Example
+##### Example
 
 ```javascript
 function sumBunnies(blackBunnies, whiteBunnies) {
@@ -393,7 +394,7 @@ sumBunnies(10, 20);
 
 ---
 
-### Function Return
+#### Function Return
 
 - The `return` statement stops the execution of a function and returns a value from that function.
 
@@ -401,7 +402,7 @@ sumBunnies(10, 20);
 
 ---
 
-### Arrow Functions
+#### Arrow Functions
 
 - Arrow functions are a shorter syntax for writing function expressions.
 
@@ -420,7 +421,7 @@ sumBunnies(10, 20);
 
 ---
 
-### IIFE (Immediately Invoked Function Expression)
+#### IIFE (Immediately Invoked Function Expression)
 
 These are functions that are executed as soon as they are defined.
 
@@ -435,13 +436,11 @@ These are functions that are executed as soon as they are defined.
 
 ---
 
-### Type-casting <a name="type-casting"></a>
-
-#### Type Casting in JavaScript
+#### Type-casting <a name="type-casting"></a>
 
 Type casting is the process of converting a value from one data type to another (such as string to number, object to boolean, and so on).
 
-#### Examples of Type Casting
+##### Examples of Type Casting
 
 ##### String to Number
 
@@ -463,9 +462,7 @@ console.log(c); // '7'
 
 ---
 
-### Arrays <a name="arrays"></a>
-
-### Array methods
+### Arrays and Array methods <a name="arrays"></a>
 
 These are some of the most common array methods:
 
@@ -494,6 +491,8 @@ bunnies.splice(1, 1); // ['Lucy', 'Molly']
 const newBunnies = bunnies.slice(); // ['Lucy', 'Molly']
 ```
 
+&nbsp;
+
 ### Mixed Data Types - Array
 
 You can store different data types in an array.
@@ -520,7 +519,7 @@ bunnies[1]; // 'Tom'
 
 ---
 
-### Array Length
+#### Array Length
 
 Get the length of an array.
 
@@ -532,7 +531,7 @@ bunnies.length; // 3
 
 ---
 
-### Looping Through Arrays
+#### Looping Through Arrays
 
 You can loop through an array using a `for` loop.
 
@@ -552,7 +551,7 @@ Bunny Molly is scheduled for a checkup today.
 
 ---
 
-### Nested Arrays
+#### Nested Arrays
 
 The elements of an array can be arrays themselves.
 
@@ -565,7 +564,7 @@ const nestedArrays = [
 
 ---
 
-### Accessing Nested Arrays
+#### Accessing Nested Arrays
 
 You can access nested arrays by chaining the index numbers.
 
@@ -581,7 +580,7 @@ nestedArrays[0][0]; // 'Lucy'
 
 ---
 
-### Exercises
+##### Exercises
 
 1. Create an array called `bunnies` that contains the names of six bunnies.
 
@@ -593,7 +592,9 @@ nestedArrays[0][0]; // 'Lucy'
 
 ---
 
-### JSON <a name="json"></a>
+&nbsp;
+
+#### JSON <a name="json"></a>
 
 `JSON` stands for JavaScript Object Notation. It is a lightweight data-interchange format. We can use `JSON` to store and exchange data. JSON is often used when data is sent from a server to a web page.
 
@@ -636,7 +637,9 @@ console.log(bunny.name); // Lucy
 
 ---
 
-### Exercises
+&nbsp;
+
+#### Exercises
 
 1. Create a JavaScript object called `bunny` with the following properties: `name`, `age`, and `isHappy`. Set the values of the properties to your own bunny's name, age, and happiness level.
 
@@ -644,9 +647,7 @@ console.log(bunny.name); // Lucy
 
 ---
 
-### Comparison Operators <a name="comparison-operators"></a>
-
-### Comparison Operators in JavaScript
+#### Comparison Operators <a name="comparison-operators"></a>
 
 For comparison operators, we can use the following operators:
 
@@ -725,9 +726,9 @@ Use a comparison operator to check (less than or equal to) if the number of bunn
 
 ---
 
-### Conditional Statements <a name="conditional"></a>
+&nbsp;
 
-### Conditional Statements
+### Conditional Statements <a name="conditional"></a>
 
 These are ways of controlling the flow of your code. They allow you to make decisions based on certain conditions.
 
@@ -739,7 +740,7 @@ if (condition) {
 }
 ```
 
-### Example
+##### Example
 
 ```js
 // check if bunny is healthy
@@ -759,7 +760,7 @@ if (condition) {
 }
 ```
 
-### Example
+##### Example
 
 ```js
 // check if bunny is healthy
@@ -783,7 +784,7 @@ if (condition) {
 }
 ```
 
-### Example
+##### Example
 
 ```js
 // check if bunny is healthy
@@ -797,7 +798,7 @@ if (bunny === 'healthy') {
 }
 ```
 
----
+## &nbsp;
 
 #### Switch Statement syntax
 
@@ -814,7 +815,7 @@ switch (expression) {
 }
 ```
 
-### Example
+##### Example
 
 ```js
 // check if bunny is healthy
@@ -839,7 +840,7 @@ switch (bunny) {
 condition ? expression1 : expression2;
 ```
 
-### Example
+##### Example
 
 ```js
 // check if bunny is healthy
@@ -859,7 +860,7 @@ if (bunny === 'healthy') {
 }
 ```
 
-#### Exercise
+##### Exercise
 
 Using a ternary operator , write a function that takes in a number and returns a string that says whether the number is even or odd.
 
@@ -875,9 +876,9 @@ console.log(evenOrOdd(4)); // even
 
 ---
 
-### Loops <a name="loops"></a>
+&nbsp;
 
-### Loops and Iterations
+### Loops <a name="loops"></a>
 
 Loops and Iteration are a way to repeat a block of code until a condition is met.
 
@@ -903,9 +904,9 @@ while (i < 10) {
 
 ---
 
-### Exception Handling <a name="exceptions"></a>
+&nbsp;
 
-### Exception Handling
+### Exception Handling <a name="exceptions"></a>
 
 These are ways of handling errors in your code. They allow you to catch errors and handle them in a way that makes sense for your application.
 
@@ -953,9 +954,9 @@ try {
 
 ---
 
-### Operators <a name="operators"></a>
+&nbsp;
 
-### Operators
+### Operators <a name="operators"></a>
 
 ##### Operators types in JavaScript
 
@@ -1019,9 +1020,9 @@ let x = 0,
 
 ---
 
-### Classes <a name="classes"></a>
+&nbsp;
 
-### Classes in Javascript
+### Classes <a name="classes"></a>
 
 - Classes are a template for creating objects.
 
@@ -1065,7 +1066,7 @@ class Bunny {
 
 - `speak` is a method of the class `Bunny`.
 
-#### Example of creating an object from a class with methods:
+##### Example of creating an object from a class with methods:
 
 ```javascript
 let bunny = new Bunny('Peter', 'white');
@@ -1074,7 +1075,7 @@ bunny.speak();
 
 - `bunny.speak()` is a method call.
 
-#### Example of class declaration with static methods:
+##### Example of class declaration with static methods:
 
 ```javascript
 class Bunny {
@@ -1095,7 +1096,7 @@ class Bunny {
 
 - `static` keyword is used to create a static method.
 
-#### Example of creating an object from a class with static methods:
+##### Example of creating an object from a class with static methods:
 
 ```javascript
 let bunny = new Bunny('Peter', 'white');
@@ -1108,9 +1109,9 @@ Bunny.info();
 
 ---
 
-### Promises <a name="promises"></a>
+&nbsp;
 
-### Promises in JavaScript
+#### Promises <a name="promises"></a>
 
 Promises are a way to handle asynchronous operations in JavaScript.
 
@@ -1122,7 +1123,7 @@ Promises are a way to handle asynchronous operations in JavaScript.
 - Resolved
 - Rejected
 
-#### Example of a Promise
+##### Example of a Promise
 
 ```js
 const promise = new Promise((resolve, reject) => {
@@ -1152,7 +1153,7 @@ getTodos_();
 
 > In the above code, the `getTodos_` function is a function that makes an API call to the `https://jsonplaceholder.typicode.com/todos` endpoint. The `fetch` function returns a promise. The `then` method is called when the promise is resolved. The `catch` method is called when the promise is rejected.
 
-#### Example of a Promise with `async` and `await`
+##### Example of a Promise with `async` and `await`
 
 ```js
 // async await
@@ -1170,9 +1171,11 @@ getTodos();
 
 ---
 
-### Rest-Spread-Ops <a name="rest-spread-ops"></a>
+&nbsp;
 
-### Spread Operator
+### Rest-Spread-Operators <a name="rest-spread-ops"></a>
+
+#### Spread Operator
 
 ```js
 const arr = [1, 2, 3];
@@ -1186,7 +1189,7 @@ console.log(arr2);
 
 ---
 
-### Example 2
+##### Example 2
 
 ```js
 const bunnies = ['Peter', 'John', 'Paul'];
@@ -1198,7 +1201,7 @@ console.log(bunnies2);
 
 ---
 
-### Rest Operator
+#### Rest Operator
 
 ```js
 const highestNumber = (...args) => {
@@ -1215,9 +1218,9 @@ console.log(highestNumber(1, 2, 3, 4, 5, 6));
 
 ---
 
-### Template Literals <a name="template-literals"></a>
+&nbsp;
 
-### Template Literals
+#### Template Literals <a name="template-literals"></a>
 
 - Template literals are string literals allowing embedded expressions.
 
@@ -1235,9 +1238,11 @@ console.log(`My bunny's name is ${bunny_name} and his color is ${bunny_color}`);
 
 ---
 
+&nbsp;
+
 ### Calculator <a name="calculator"></a>
 
-### Create a simple calculator
+Create a simple calculator
 
 ```js
 // calculator example
@@ -1291,13 +1296,13 @@ console.log(calculator.squareRoot(2));
 console.log(calculator.cubeRoot(2));
 ```
 
-### HOF <a name="hof"></a>
+&nbsp;
 
-### Higher order methods in Javascript
+### Higher order Function in Javascript <a name="hof"></a>
 
 - Examples are `reduce`, `map`, `filter`, `forEach`, `find`
 
-#### Example of `reduce` method:
+##### Example of `reduce` method:
 
 ```javascript
 // bunnies
@@ -1367,7 +1372,7 @@ console.log(whiteBunnies);
 
 - `filter` method is used to create a new array with all elements that pass the test implemented by the provided function.
 
-#### Example of `forEach` method:
+##### Example of `forEach` method:
 
 ```javascript
 // bunnies
@@ -1387,7 +1392,7 @@ bunnies.forEach((bunny) => {
 
 - `forEach` method is used to execute a provided function once for each array element.
 
-#### Example of `find` method:
+##### Example of `find` method:
 
 ```javascript
 // bunnies
@@ -1411,13 +1416,11 @@ console.log(whiteBunny);
 
 ---
 
-### Destructuring <a name="destructuring"></a>
-
-### Destructuring in JavaScript
+#### Destructuring <a name="destructuring"></a>
 
 Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
-#### Array Destructuring
+##### Array Destructuring
 
 ```js
 const bunnies = ['Lucy', 'Tom', 'Molly'];
@@ -1434,7 +1437,7 @@ const [firstBunny, , thirdBunny] = bunnies;
 console.log(firstBunny); // Output: Lucy
 ```
 
-#### Object Destructuring
+##### Object Destructuring
 
 ```js
 const bunny = {
